@@ -6,7 +6,12 @@
 package 'httpd' do
 	action:install
 end
+service 'httpd' do 
+action :start
+end
 
-
+file '/home/ec2-user/f123.sh/' do
+action :create
+end
 
 
